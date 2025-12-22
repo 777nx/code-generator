@@ -2,7 +2,6 @@ package com.fantasy.generator;
 
 import com.fantasy.model.MainTemplateConfig;
 import freemarker.template.TemplateException;
-import org.apache.commons.collections4.Put;
 
 import java.io.File;
 import java.io.IOException;
