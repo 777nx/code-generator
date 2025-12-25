@@ -1,10 +1,9 @@
 # My Custom
 
-.idea
 generated
+.idea
 target
 code-generator.iml
-code-generator-basic.iml
 
 ### Java template
 # Compiled class file
