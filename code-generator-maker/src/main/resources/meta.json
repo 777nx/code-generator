@@ -6,8 +6,9 @@
   "author": "Fantasy",
   "createTime": "2025-12-24",
   "fileConfig": {
-    "inputRootPath": "D:/yupi/code-generator/code-generator-demo-projects/acm-template-pro",
+    "inputRootPath": ".source/acm-template-pro",
     "outputRootPath": "generated",
+    "sourceRootPath": "D:/yupi/code-generator/code-generator-demo-projects/acm-template-pro",
     "type": "dir",
     "files": [
       {
