@@ -14,7 +14,7 @@
 
 示例命令：
 
-generator generate <#list modelConfig.models as modelInfo>-${modelInfo.abbr} </#list>
+generator generate <#list modelConfig.models as modelInfo>-${(modelInfo.abbr)!} </#list>
 
 <#list modelConfig.models as modelInfo>
     ${modelInfo?index + 1}）${modelInfo.fieldName}
@@ -25,7 +25,7 @@ generator generate <#list modelConfig.models as modelInfo>-${modelInfo.abbr} </#
 
     默认值：${modelInfo.defaultValue?c}
 
-    缩写： -${modelInfo.abbr}
+    缩写： -${(modelInfo.abbr)!}
 
 
 </#list>
