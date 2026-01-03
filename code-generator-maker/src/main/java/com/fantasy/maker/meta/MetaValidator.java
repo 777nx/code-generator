@@ -88,11 +88,11 @@ public class MetaValidator {
         }
 
         // fileInfo 默认值
-        List<Meta.FileConfig.FilesInfo> fileInfoList = fileConfig.getFiles();
+        List<Meta.FileConfig.FileInfo> fileInfoList = fileConfig.getFiles();
         if (!CollectionUtil.isNotEmpty(fileInfoList)) {
             return;
         }
-        for (Meta.FileConfig.FilesInfo fileInfo : fileInfoList) {
+        for (Meta.FileConfig.FileInfo fileInfo : fileInfoList) {
             String type = fileInfo.getType();
             if (FileTypeEnum.GROUP.getValue().equals(type)) {
                 continue;
