@@ -1,6 +1,7 @@
 # My Custom
 
 .idea
+.temp
 generated
 target
 code-generator.iml

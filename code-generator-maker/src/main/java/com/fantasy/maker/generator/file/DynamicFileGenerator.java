@@ -1,7 +1,6 @@
 package com.fantasy.maker.generator.file;
 
 import cn.hutool.core.io.FileUtil;
-import com.fantasy.maker.model.DataModel;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -39,12 +38,6 @@ public class DynamicFileGenerator {
         // 创建模板对象，加载指定模板
         String templateName = new File(inputPath).getName();
         Template template = configuration.getTemplate(templateName);
-
-        // 创建数据模型
-        DataModel dataModel = new DataModel();
-        dataModel.setAuthor("Fantasy");
-        dataModel.setLoop(false);
-        dataModel.setOutputText("求和结果：");
 
         // 如果文件不存在则创建文件和父目录
         if (!FileUtil.exist(outputPath)) {
