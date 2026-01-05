@@ -49,7 +49,7 @@ INSERT INTO my_db.user (id, userAccount, userPassword, userName, userAvatar, use
 VALUES (1, 'Fantasy', 'b0dd3697a192885d7c055db46155b26a', '程序员阿符',
         'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png', '我有一头小毛驴我从来也不骑', 'admin');
 INSERT INTO my_db.user (id, userAccount, userPassword, userName, userAvatar, userProfile, userRole)
-VALUES (2, 'Fantasy', 'b0dd3697a192885d7c055db46155b26a', '普通阿符',
+VALUES (2, 'Fantasy2', 'b0dd3697a192885d7c055db46155b26a', '普通阿符',
         'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png', '我有一头小毛驴我从来也不骑', 'user');
 
 -- 模拟代码生成器数据
