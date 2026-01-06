@@ -90,6 +90,7 @@ public class GeneratorServiceImpl extends ServiceImpl<GeneratorMapper, Generator
         if (StringUtils.isNotBlank(searchText)) {
             queryWrapper.and(qw -> qw.like("name", searchText).or().like("description", searchText));
         }
+        // todo 修复拼接异常逻辑
         queryWrapper.like(StringUtils.isNotBlank(name), "name", name);
         queryWrapper.like(StringUtils.isNotBlank(description), "description", description);
         if (CollUtil.isNotEmpty(tags)) {
