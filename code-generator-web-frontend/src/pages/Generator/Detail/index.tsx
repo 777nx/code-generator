@@ -77,8 +77,9 @@ const GeneratorDetailPage: React.FC = () => {
       icon={<DownloadOutlined />}
       onClick={async () => {
         const blob = await downloadGeneratorByIdUsingGet(
-          // @ts-ignore
-          { id },
+          {
+            id: data.id,
+          },
           {
             responseType: 'blob',
           },
