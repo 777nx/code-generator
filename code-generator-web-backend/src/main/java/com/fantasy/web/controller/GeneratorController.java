@@ -408,7 +408,8 @@ public class GeneratorController {
         // 从对象存储下载生成器的压缩包
         // 定义独立的工作空间
         String projectPath = System.getProperty("user.dir");
-        String tempDirPath = String.format("%s/.temp/use/%s", projectPath, id);
+        // 必须要用 userId 区分，否则可能会导致输入参数文件冲突
+        String tempDirPath = String.format("%s/.temp/use/%s/%s", projectPath, id, loginUser.getId());
         String zipFilePath = tempDirPath + "/dist.zip";
         if (!FileUtil.exist(zipFilePath)) {
             FileUtil.touch(zipFilePath);
