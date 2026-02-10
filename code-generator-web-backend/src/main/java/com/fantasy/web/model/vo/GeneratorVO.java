@@ -1,7 +1,7 @@
 package com.fantasy.web.model.vo;
 
 import cn.hutool.json.JSONUtil;
-import com.fantasy.web.meta.Meta;
+import com.fantasy.maker.meta.Meta;
 import com.fantasy.web.model.entity.Generator;
 import lombok.Data;
 import org.springframework.beans.BeanUtils;

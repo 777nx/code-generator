@@ -1,6 +1,6 @@
 package com.fantasy.web.model.dto.generator;
 
-import com.fantasy.web.meta.Meta;
+import com.fantasy.maker.meta.Meta;
 import lombok.Data;
 
 import java.io.Serializable;
